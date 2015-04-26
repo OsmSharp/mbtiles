@@ -51,8 +51,7 @@ namespace mbtiles
             query.Parameters.Add(new SQLiteParameter(@"tile_row", DbType.Int64));
             query.Parameters.Add(new SQLiteParameter(@"tile_data", DbType.Binary));
 
-            //var url = "http://localhost:1234/default/{z}/{x}/{y}.png";
-            var url = "https://a.tiles.mapbox.com/v4/mufort.d540a5b4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibXVmb3J0IiwiYSI6ImNYZkRrQTAifQ.tJ1ZBrITTkFETMU8UvpWtQ";
+            var url = "http://localhost:1234/default/{z}/{x}/{y}.png";
             var box = new GeoCoordinateBox(
                 new GeoCoordinate(42.195968776291780, -5.2294921875),
                 new GeoCoordinate(51.248163159055906, 8.50341796875));
